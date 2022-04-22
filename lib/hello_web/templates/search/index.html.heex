@@ -3,4 +3,4 @@
 </div>
 
 Keywords <%= text_input :user, :name, value: "Foxtail millet" %>
-<%= button("search", to: "/", method: :get) %>
+<%= button("search", to: URI.parse("https://www.ncbi.nlm.nih.gov/sra/?term=foxtail+millet")) %>

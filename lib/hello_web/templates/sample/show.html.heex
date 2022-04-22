@@ -1,0 +1,48 @@
+<h1>Show Sample</h1>
+
+<ul>
+
+  <li>
+    <strong>Accession:</strong>
+    <%= @sample.accession %>
+  </li>
+
+  <li>
+    <strong>Species:</strong>
+    <%= @sample.species %>
+  </li>
+
+  <li>
+    <strong>Origin:</strong>
+    <%= @sample.origin %>
+  </li>
+
+  <li>
+    <strong>Latitude:</strong>
+    <%= @sample.latitude %>
+  </li>
+
+  <li>
+    <strong>Longitude:</strong>
+    <%= @sample.longitude %>
+  </li>
+
+  <li>
+    <strong>File:</strong>
+    <%= @sample.file %>
+  </li>
+
+  <li>
+    <strong>Link:</strong>
+    <%= @sample.link %>
+  </li>
+
+  <li>
+    <strong>Comments:</strong>
+    <%= @sample.comments %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.sample_path(@conn, :edit, @sample) %></span> |
+<span><%= link "Back", to: Routes.sample_path(@conn, :index) %></span>
